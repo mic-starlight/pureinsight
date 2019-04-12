@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Index</title>
-</head>
-<body>
-	<h1>Blah</h1>
-	<h1>Blah1</h1>
-</body>
+	<head>
+		<title>Home</title>
+
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="jquery/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+
+		<!-- I use js to hide GET START button when the button is cilcked and show our course # i hope you guy understand -->
+		<!-- I also use bootstarp to show link -->
+		<!-- I forget content so i don't know what to write in nav bar can anyone tell me about content -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#hidecourse').hide();
+				$('#course').show();
+
+				$("#nav").click(function(){
+					$('#hidecourse').show();
+					$('#course').hide();
+				})
+
+			});
+		</script>
+	</head>
+	<body>
+		<!-- Nav bar -->
+		<nav class="navbar navbar-expand-md navbar-light" style="background: #22324c;">
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo5.png" class="img-fluid">
+				</div>
+				<button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#mynav">
+					<span class="navbar-toggler-icon" id="nav"></span>
+				</button>
+
+				<!-- Sub Nav -->
+				<div class="collapse navbar-collapse" id="mynav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="#" class="nav-link text-info mx-3">Home</a></li>
+
+						<li class="nav-item"><a href="#" class="nav-link text-info mx-3">About</a></li>
+
+						<li class="nav-item"><a href="#" class="nav-link text-info mx-3">Contact</a></li>
+
+						<li class="nav-item"><a href="#" class="nav-link text-white login mx-3">Log in</a></li>
+
+						<li class="nav-item" id="course"><a href="#" class="nav-link text-light mx-3 btn btn-outline-light d-inline-block">Get Start</a></li>
+
+						<div id="hidecourse">
+							<hr>
+							<li class="nav-item mx-3 text-white">Course</li>
+							<li class="nav-item"><a href="#" class="nav-link text-info mx-3">HTML</a></li>
+							<li class="nav-item"><a href="#" class="nav-link text-info mx-3">CSS</a></li>
+							<li class="nav-item"><a href="#" class="nav-link text-info mx-3">JavaScript</a></li>
+						</div>
+					</ul>
+				</div>
+			</div><!-- Container -->		
+		</nav>
+	</body>
 </html>
 	
